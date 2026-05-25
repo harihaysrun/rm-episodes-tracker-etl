@@ -18,7 +18,10 @@ df["ep_no"] = df["ep_no"].str[:3].astype(int)
 df["aired_date"] = df["aired_date"].str.split("|").str[0]
 df["aired_date"] = pd.to_datetime(df["aired_date"])
 
-df[["title","guests","teams","mission","results"]] = df[["title","guests","teams","mission","results"]].replace("|", " ")
+df["guests"] = df["guests"].str.replace("|", ", ")
 
-print(df)
-print(df.dtypes)
+cols_to_clean = ["title","teams","mission","results"]
+for col in cols_to_clean:
+    df[col] = df[col].str.replace("|", " ")
+
+df.to_csv("cleaned_rm_episodes.csv", index=False)
