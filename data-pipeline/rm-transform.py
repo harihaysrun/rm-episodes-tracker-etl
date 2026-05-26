@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_excel("rm_episodes.xlsx")
 
 df.rename(columns={
-    'Ep.': 'ep_no',
+    'Ep.': 'ep_id',
     'Airdate|(Filming date)': 'aired_date',
     'Title': 'title',
     'Guest(s)': 'guests',
@@ -13,7 +13,7 @@ df.rename(columns={
     'Results': 'results'
 }, inplace=True)
 
-df["ep_no"] = df["ep_no"].str[:3].astype(int)
+df["ep_id"] = df["ep_id"].str[:3].astype(int)
 
 df["aired_date"] = df["aired_date"].str.split("|").str[0]
 df["aired_date"] = pd.to_datetime(df["aired_date"])
