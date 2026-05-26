@@ -26,7 +26,7 @@ jobs:
           pip install -r data-pipeline/requirements.txt
           
       - name: Run ETL scripts
-        working-directory: ./data-pipeline
+        working-directory: /data-pipeline
         env:
           DB_URL : ${{ secrets.DB_URL }}
         run: |
