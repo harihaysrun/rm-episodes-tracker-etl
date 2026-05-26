@@ -6,7 +6,7 @@ on:
     paths:
       - 'data-pipeline/**'
     schedule:
-      - cron: '0 23 * * 1' # run once everyweek at 12pm sgt
+      - cron: '0 23 * * 1' # run once every tues at 7am sgt
   workflow_dispatch:
 
 jobs:
