@@ -1,4 +1,4 @@
-name: Get episodes every Monday
+name: Get RM episodes every Monday
 on:
   push:
     branches:
