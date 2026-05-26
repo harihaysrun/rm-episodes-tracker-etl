@@ -26,9 +26,10 @@ jobs:
           pip install -r data-pipeline/requirements.txt
           
       - name: Run ETL scripts
+        working-directory: ./data-pipeline
         env:
           DB_URL : ${{ secrets.DB_URL }}
         run: |
-          python data-pipeline/scraper.py
-          python data-pipeline/transform.py
-          python data-pipeline/load.py
+          python scraper.py
+          python transform.py
+          python load.py
