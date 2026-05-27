@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or "Flask App" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="{% if request.endpoint == 'index' %}active{% endif %}" href="{{ url_for('index') }}">All episodes</a>
+        <a class="{% if request.endpoint == 'watchlist' %}active{% endif %}" href="{{ url_for('watchlist') }}">Watchlist</a>
+      </nav>
+    </header>
+    <main class="page">
+      {% block content %}{% endblock %}
+      <div class="disclaimer">
+        © <a href="https://github.com/harihaysrun">@HARIHAYSRUN</a> 2026
+        <br>For <b>personal demonstration purposes</b> only.
+      </div>
+    </main>
+  </body>
+</html>
