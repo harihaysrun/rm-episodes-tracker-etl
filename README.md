@@ -39,7 +39,7 @@ The Excel file is passed into `rm-transform.py`, which utilises `pandas` for fur
 
 
 ## Automation with GitHub Actions
-To eliminate manual intervention, the entire pipeline is orchestrated by **GitHub Actions**, a resource-efficient alternative to Apache Airflow.
+The pipeline is orchestrated using **GitHub Actions** for automated scheduled execution, providing a lightweight alternative to Apache Airflow.
 * A cron-based workflow triggers the Python scripts in sequence on a weekly schedule. This creates a "set-and-forget" data environment where the database is continuously kept in sync with the latest episodes.
 
 
