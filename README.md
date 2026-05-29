@@ -1,4 +1,4 @@
-# Running Man episodes tracker
+# Running Man Episode Tracker
 
 A fully automated ETL pipeline that scrapes, processes, and visualises *Running Man* episode data.
 
