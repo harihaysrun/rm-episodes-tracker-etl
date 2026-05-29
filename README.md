@@ -1,4 +1,4 @@
-# Running Man Data Engineering Pipeline
+# Running Man episodes tracker
 
 A fully automated ETL pipeline that scrapes, processes, and visualises *Running Man* episode data.
 
@@ -10,7 +10,7 @@ A fully automated ETL pipeline that scrapes, processes, and visualises *Running 
 * **GitHub Actions:** CI/CD for automated pipeline scheduling.
 * **Flask & Jinja2:** Backend and frontend dashboard implementation.
 
----
+
 
 ## How the pipeline works
 
@@ -33,17 +33,15 @@ The Excel file is passed into `rm-transform.py`, which utilises `pandas` for fur
 <details>
 <summary><b>Click here to view the database schema (ERD)</b></summary>
 
-![Database Schema](database/erd model.png)
+![Database Schema](database/erd-model.png)
 </details>
 
 
----
 
 ## Automation with GitHub Actions
 To eliminate manual intervention, the entire pipeline is orchestrated by **GitHub Actions**, a resource-efficient alternative to Apache Airflow.
 * A cron-based workflow triggers the Python scripts in sequence on a weekly schedule. This creates a "set-and-forget" data environment where the database is continuously kept in sync with the latest episodes.
 
----
 
 ## Full-stack dashboard & watchlist
 
@@ -58,7 +56,6 @@ Beyond the engineering pipeline, this project includes an interactive web dashbo
 * **Explore episodes:** Search and filter through the complete episode database.
 * **Personal watchlist:** Maintain a custom state for episodes, demonstrating basic CRUD (Create, Read, Update, Delete) capabilities within the web app.
 
----
 
 ## Project Structure
 
