@@ -1,6 +1,6 @@
 # Running Man Episode Tracker
 
-A fully automated ETL pipeline that scrapes, processes, and visualises *Running Man* episode data.
+A fully automated ETL pipeline that scrapes, processes, and loads *Running Man* episode data into a database for use in a front-end interface with search, filtering, and watchlist functionality.
 
 ### Tech Stack
 * **Python:** The core logic engine.
@@ -20,7 +20,7 @@ A fully automated ETL pipeline that scrapes, processes, and visualises *Running 
 
 ### 2. Transformation (T): Data refinement
 The Excel file is passed into `rm-transform.py`, which utilises `pandas` for further data manipulation. This stage involves:
-* **Normalisation:** Standardising column headers and data formats.
+* **Normalisation:** Standardising column headers and dataformats.
 * **Data cleaning:** Fixing data types and converting guest name lists into a comma-separated format.
 * **Validation:** Ensuring that the final output is a clean, ready-to-ingest CSV file for the loading phase.
 
