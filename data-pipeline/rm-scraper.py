@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from connect import connect_to_s3
 
 def run_scrape():
-    s3, bucket = connect_to_s3()
 
     user_agent = {'User-agent': 'Mozilla/5.0'}
     BASE_URL = 'https://en.wikipedia.org/wiki/'
@@ -64,4 +63,5 @@ def run_scrape():
     s3.upload_file("rm_episodes.json", bucket, "rm_episodes.json")
 
 if __name__ == "__main__":
+    s3, bucket = connect_to_s3()
     run_scrape()
