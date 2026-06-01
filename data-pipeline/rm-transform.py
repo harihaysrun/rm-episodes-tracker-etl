@@ -11,7 +11,7 @@ def run_transform():
 
     df.rename(columns={
         'Ep.': 'ep_id',
-        'Airdate': 'aired_date',
+        'Airdate|(Filming date)': 'aired_date',
         'Title': 'title',
         'Guest(s)': 'guests',
         'Teams': 'teams',

@@ -55,7 +55,6 @@ def save_guests(df):
 
             with engine.begin() as conn:
                 conn.execute(query, guests_df.to_dict("records"))
-                conn.execute(text("REFRESH MATERIALIZED VIEW guests_per_ep"))
                 print("guests added")
 
         else:
@@ -86,6 +85,10 @@ def save_ep_guest(df):
 
             # pprint(ep_guest_id_df)
             ep_guest_id_df.to_sql('rm_ep_guests', con=engine, if_exists='append', index=False)
+
+            with engine.begin() as conn:
+                conn.execute(text("REFRESH MATERIALIZED VIEW guests_per_ep"))
+                print("mv refreshed")
 
             print("episodes and guests data added to db")
         else:
