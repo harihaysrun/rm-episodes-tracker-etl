@@ -44,6 +44,7 @@ def save_guests(df):
         ep_guests_df = guests_df[["ep_id","guest_name"]]
 
         guests_df = guests_df[["guest_name"]].drop_duplicates()
+        guests_df = guests_df[~guests_df["guest_name"].str.match(r'^\s*[\[\(].*[\]\)]\s*$')]
         pprint(guests_df)
 
         if not guests_df.empty:
