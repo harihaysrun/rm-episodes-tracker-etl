@@ -9,6 +9,9 @@ on:
       - cron: '0 23 * * 1' # run once every tues at 7am sgt
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,6 +32,10 @@ jobs:
         working-directory: ./data-pipeline
         env:
           DB_URL : ${{ secrets.DB_URL }}
+          AK : ${{ secrets.AK }}
+          SAK : ${{ secrets.SAK }}
+          REGION : ${{ secrets.REGION }}
+          BUCKET : ${{ secrets.BUCKET }}
         run: |
           python rm-scraper.py
           python rm-transform.py

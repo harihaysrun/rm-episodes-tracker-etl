@@ -15,20 +15,20 @@ A fully automated ETL pipeline that scrapes, processes, and loads *Running Man* 
 ## How the pipeline works
 
 ### 1. Extraction (E): Web scraping
-`rm-scraper.py` initiates by accessing the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using `BeautifulSoup4`. Due to the complex structure of the HTML table (with multiple rowspans), data is stored in a grid list to preserve the exact positioning of the cell values before being cached in an Excel file.
+`rm-scraper.py` initiates by accessing the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using `BeautifulSoup4`. Due to the complex structure of the HTML table (with multiple rowspans), data is stored in a grid list to preserve the exact positioning of the cell values before being saved in a JSON file stored in S3.
 * Removal of HTML tags is performed during this step.
 
 ### 2. Transformation (T): Data refinement
-The Excel file is passed into `rm-transform.py`, which utilises `pandas` for further data manipulation. This stage involves:
-* **Normalisation:** Standardising column headers and dataformats.
-* **Data cleaning:** Fixing data types and converting guest name lists into a comma-separated format.
-* **Validation:** Ensuring that the final output is a clean, ready-to-ingest CSV file for the loading phase.
+The JSON file is processed by `rm-transform.py`, which uses `pandas` for data transformation and preparation. This stage includes:
+* **Normalisation:** Standardising column headers and data formats.
+* **Data cleaning:** Fixing data types and converting structured fields (e.g., guest lists) into a consistent format.
+* **Validation:** Ensuring the output is clean and ready for the loading phase.
 
 ### 3. Loading (L): Database persistence
-`rm-load.py` bridges the cleaned CSV file to the PostgreSQL database using a high-performance ingestion workflow:
+`rm-load.py` loads the cleaned JSON data into the PostgreSQL database using `pandas` and `SQLAlchemy`:
 
-* **Efficient data ingestion:** Utilises `pandas.read_sql` and `SQLAlchemy` to perform seamless data transfer from DataFrames into PostgreSQL.
-* **Production-ready standards:** The load process is fully automated using context managers for secure connection handling and parameterised queries for safe data ingestion.
+* **Data ingestion:** Transfers transformed DataFrames into PostgreSQL efficiently.
+* **Production practices:** Uses context managers for safe connection handling and parameterised operations for secure data loading.
 
 <details>
 <summary><b>Click here to view the database schema (ERD)</b></summary>

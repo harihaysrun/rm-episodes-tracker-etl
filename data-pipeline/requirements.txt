@@ -5,3 +5,4 @@ openpyxl
 sqlalchemy
 python-dotenv
 psycopg2
+boto3

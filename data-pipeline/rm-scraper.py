@@ -1,6 +1,10 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+# from pprint import pprint
+from connect import connect_to_s3
+
+s3, bucket = connect_to_s3()
 
 user_agent = {'User-agent': 'Mozilla/5.0'}
 BASE_URL = 'https://en.wikipedia.org/wiki/'
@@ -48,8 +52,12 @@ for row_id, row in enumerate(rows):
 
         col_id += 1
 
-# export to excel
-df = pd.DataFrame(grid)
-df.to_excel("rm_episodes.xlsx", index=False, header=False)
+# export as json file
+headers = grid[0]
+ep_rows = grid[1:]
 
-print("saved!")
+df = pd.DataFrame(ep_rows, columns = headers)
+df.to_json("rm_episodes.json", orient="records", indent=4, force_ascii=False)
+# json_string = df.to_json(orient="records")
+
+s3.upload_file("rm_episodes.json", bucket, "rm_episodes.json")
