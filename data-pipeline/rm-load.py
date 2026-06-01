@@ -4,9 +4,6 @@ import pandas as pd
 from sqlalchemy import text
 from connect import create_db_engine, connect_to_s3, load_json_file
 
-engine = create_db_engine()
-s3, bucket = connect_to_s3()
-
 def check_eps():
     try:
         with engine.connect() as conn:
@@ -98,6 +95,9 @@ def save_ep_guest(df):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
+    engine = create_db_engine()
+    s3, bucket = connect_to_s3()
+
     latest_ep = check_eps()
     print(f"The latest ep is: {latest_ep}")
     episodes_df = save_ep(latest_ep)
