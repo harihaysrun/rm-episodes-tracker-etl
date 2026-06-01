@@ -6,14 +6,13 @@ import json
 def connect_to_s3():
     access_key = os.getenv("AK")
     secret_key = os.getenv("SAK")
-    region = os.getenv("REGION")
     bucket = os.getenv("BUCKET")
 
     s3 = boto3.client(
         's3',
         aws_access_key_id=access_key,
         aws_secret_access_key=secret_key,
-        region_name=region
+        region_name="ap-southeast-1"
     )
 
     return s3, bucket
