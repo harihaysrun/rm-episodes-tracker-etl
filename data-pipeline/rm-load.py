@@ -38,14 +38,14 @@ def save_guests(df):
         guests_df = df.explode('guests')
         guests_df = guests_df[~guests_df["guests"].str.startswith("(", na=False)]
         guests_df = guests_df[guests_df["guests"] != "No guest"]
+        guests_df = guests_df[~guests_df["guests"].str.match(r'^\s*[\[\(].*[\]\)]\s*$')]
         guests_df = guests_df.rename(columns={"guests":"guest_name"}) # col in table is guest_name
+        pprint(guests_df)
 
         # used for the rm_ep_guests junction table
         ep_guests_df = guests_df[["ep_id","guest_name"]]
 
         guests_df = guests_df[["guest_name"]].drop_duplicates()
-        guests_df = guests_df[~guests_df["guest_name"].str.match(r'^\s*[\[\(].*[\]\)]\s*$')]
-        pprint(guests_df)
 
         if not guests_df.empty:
             query = text('''
@@ -84,14 +84,15 @@ def save_ep_guest(df):
             # only get ep_id and guest_id to save to junction table
             ep_guest_id_df = df[["ep_id","guest_id"]]
 
-            # pprint(ep_guest_id_df)
+            pprint(df[df["guest_id"].isnull()])
+            pprint(ep_guest_id_df[ep_guest_id_df["guest_id"].isnull()])
             ep_guest_id_df.to_sql('rm_ep_guests', con=engine, if_exists='append', index=False)
+            print("episodes and guests data added to db")
 
             with engine.begin() as conn:
                 conn.execute(text("REFRESH MATERIALIZED VIEW guests_per_ep"))
                 print("mv refreshed")
 
-            print("episodes and guests data added to db")
         else:
             print("no new guests to add")
 
