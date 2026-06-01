@@ -8,7 +8,7 @@ def run_scrape():
 
     user_agent = {'User-agent': 'Mozilla/5.0'}
     BASE_URL = 'https://en.wikipedia.org/wiki/'
-    page = requests.get(BASE_URL + 'List_of_Running_Man_episodes_(2026)', headers = user_agent)
+    page = requests.get(BASE_URL + 'List_of_Running_Man_episodes_(2025)', headers = user_agent)
     soup = BeautifulSoup(page.content, "html.parser")
 
     tables = soup.find_all('table',{'class':'wikitable'})
