@@ -3,14 +3,11 @@
 A fully automated ETL pipeline that scrapes, processes, and loads *Running Man* episode data into a database for use in a front-end interface with search, filtering, and watchlist functionality.
 
 ### Tech Stack
-* **Python:** The core logic engine.
-* **PostgreSQL:** Persistent relational storage.
-* **SQLAlchemy:** Secure ORM and connection handling.
-* **Pandas:** Efficient data frame processing.
-* **GitHub Actions:** CI/CD for automated pipeline scheduling.
-* **Flask & Jinja2:** Backend and frontend dashboard implementation.
-
-
+- **Data & ETL:** Python, Pandas, PostgreSQL, SQLAlchemy
+- **Orchestration & automation:** GitHub Actions, Apache Airflow
+- **Cloud storage:** AWS S3
+- **Containerisation & infrastructure:** Docker
+- **Web application:** Flask, Jinja2
 
 ## How the pipeline works
 
