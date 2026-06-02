@@ -1,12 +1,12 @@
 name: Get new RM episodes every Tuesday
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'data-pipeline/**'
-    schedule:
-      - cron: '0 23 * * 1' # run once every tues at 7am sgt
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - 'data-pipeline/**'
+  schedule:
+    - cron: '15 3 * * 2' # every tues at 12pm sgt
   workflow_dispatch:
 
 permissions:
