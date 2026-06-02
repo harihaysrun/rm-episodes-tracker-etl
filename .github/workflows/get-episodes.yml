@@ -40,6 +40,6 @@ jobs:
           REGION : ${{ secrets.REGION }}
           BUCKET : ${{ secrets.BUCKET }}
         run: |
-          python rm-scraper.py
-          python rm-transform.py
-          python rm-load.py
+          python rm_scraper.py
+          python rm_transform.py
+          python rm_load.py
