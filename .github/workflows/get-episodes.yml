@@ -6,7 +6,8 @@ on:
 #    paths:
 #      - 'data-pipeline/**'
   schedule:
-    - cron: '15 3 * * 2' # every tues at 12pm sgt
+    - cron: '25 11 * * 2' # every tues at 12pm sgt
+      timezone: "Asia/Singapore"
   workflow_dispatch:
 
 permissions:
