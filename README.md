@@ -12,17 +12,17 @@ A fully automated ETL pipeline that scrapes, processes, and loads *Running Man* 
 ## How the pipeline works
 
 ### 1. Extraction (E): Web scraping
-`rm-scraper.py` initiates by accessing the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using `BeautifulSoup4`. Due to the complex structure of the HTML table (with multiple rowspans), data is stored in a grid list to preserve the exact positioning of the cell values before being saved in a JSON file stored in S3.
+`rm_scraper.py` initiates by accessing the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using `BeautifulSoup4`. Due to the complex structure of the HTML table (with multiple rowspans), data is stored in a grid list to preserve the exact positioning of the cell values before being saved in a JSON file stored in S3.
 * Removal of HTML tags is performed during this step.
 
 ### 2. Transformation (T): Data refinement
-The JSON file is processed by `rm-transform.py`, which uses `pandas` for data transformation and preparation. This stage includes:
+The JSON file is processed by `rm_transform.py`, which uses `pandas` for data transformation and preparation. This stage includes:
 * **Normalisation:** Standardising column headers and data formats.
 * **Data cleaning:** Fixing data types and converting structured fields (e.g., guest lists) into a consistent format.
 * **Validation:** Ensuring the output is clean and ready for the loading phase.
 
 ### 3. Loading (L): Database persistence
-`rm-load.py` loads the cleaned JSON data into the PostgreSQL database using `pandas` and `SQLAlchemy`:
+`rm_load.py` loads the cleaned JSON data into the PostgreSQL database using `pandas` and `SQLAlchemy`:
 
 * **Data ingestion:** Transfers transformed DataFrames into PostgreSQL efficiently.
 * **Production practices:** Uses context managers for safe connection handling and parameterised operations for secure data loading.
@@ -45,8 +45,8 @@ The pipeline is orchestrated using **GitHub Actions** for automated scheduled ex
 <details>
 <summary><b>Click here to view the UI</b></summary>
 
-![Home page](web-app/ui/1.png)
-![Watchlist](web-app/ui/2.png)
+![Home page](web_app/ui/1.png)
+![Watchlist](web_app/ui/2.png)
 </details>
 
 Beyond the engineering pipeline, this project includes an interactive web dashboard built on `Flask` and `Jinja2`. This serves as the visualisation layer, allowing users to:
@@ -59,6 +59,7 @@ Beyond the engineering pipeline, this project includes an interactive web dashbo
 ```text
 rm-episodes-tracker-etl/
 ├── .github/workflows/    # CI/CD pipelines
+├── airflow/              # DAG
+├── data_pipeline/        # Core ETL logic (scraper, transform, load) & requirements.txt for cron job
 ├── database/             # SQL schema
-├── data-pipeline/        # Core ETL logic (scraper, transform, load) & requirements.txt for cron job
-└── web-app/              # Flask dashboard (templates, static assets, app.py)
+└── web_app/              # Flask dashboard (templates, static assets, app.py)
