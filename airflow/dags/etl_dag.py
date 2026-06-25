@@ -6,15 +6,6 @@ from dag.rm_scraper import run_scrape
 from dag.rm_transform import run_transform
 from dag.rm_load import run_load
 
-def extract():
-    run_scrape()
-
-def transform():
-    run_transform()
-
-def load():
-    run_load()
-
 default_args = {
     'owner': 'me',
     'start_date': datetime(2026,6,2),
@@ -36,17 +27,17 @@ with DAG(
 
     extract = PythonOperator(
         task_id="extract",
-        python_callable=extract
+        python_callable=run_scrape
     )
 
     transform = PythonOperator(
         task_id="transform",
-        python_callable=transform
+        python_callable=run_transform
     )
 
     load = PythonOperator(
         task_id="load",
-        python_callable=load
+        python_callable=run_load
     )
 
     extract >> transform >> load
