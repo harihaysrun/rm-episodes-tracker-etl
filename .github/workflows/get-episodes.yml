@@ -4,7 +4,7 @@ on:
 #    branches:
 #      - main
 #    paths:
-#      - 'data-pipeline/**'
+#      - 'data_pipeline/**'
   schedule:
     - cron: '25 11 * * 2' # every tues at 12pm sgt
       timezone: "Asia/Singapore"
@@ -29,10 +29,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r data-pipeline/requirements.txt
-          
+          pip install -r data_pipeline/requirements.txt
+
       - name: Run ETL scripts
-        working-directory: ./data-pipeline
+        working-directory: ./data_pipeline
         env:
           DB_URL : ${{ secrets.DB_URL }}
           AK : ${{ secrets.AK }}
