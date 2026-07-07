@@ -19,6 +19,10 @@ def run_transform():
         'Results': 'results'
     }, inplace=True)
 
+    # exclude null values (when wikipedia table contains hidden empty cells/rows)
+    df.dropna(how="all", inplace=True)
+    # print(df.tail(10))
+
     df = df[~df["ep_id"].str.contains("Special")]
     df["ep_id"] = df["ep_id"].str[:3].astype(int)
 
