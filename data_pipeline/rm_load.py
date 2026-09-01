@@ -39,6 +39,7 @@ def save_guests(df):
         guests_df = guests_df[~guests_df["guests"].str.startswith("(", na=False)]
         guests_df = guests_df[guests_df["guests"] != "No guest"]
         guests_df = guests_df[~guests_df["guests"].str.match(r'^\s*[\[\(].*[\]\)]\s*$')]
+        guests_df["guests"] = guests_df["guests"].str.replace(r'\s*\[ko\]\s*$', '', regex=True)
         guests_df = guests_df.rename(columns={"guests":"guest_name"}) # col in table is guest_name
         pprint(guests_df)
 
