@@ -2,7 +2,7 @@
     {
         "ep_id":784,
         "aired_date":"January 4, 2026",
-        "title":"Follow the Horse, Complete the Bingo (말 따라 빙고 정복)",
+        "title":"Follow the Horse, Complete the Bingo",
         "guests":"No guest",
         "teams":"No teams",
         "mission":"Complete the bingo before 3 PM.",
@@ -11,7 +11,7 @@
     {
         "ep_id":785,
         "aired_date":"January 11, 2026",
-        "title":"Gold Bag Chasers: Gold Me More (금 가방 추격자: 골드 미 모어)",
+        "title":"Gold Bag Chasers: Gold Me More",
         "guests":"Jung Eun-ji, Kim Nam-joo, Oh Ha-young, Park Cho-rong, Yoon Bo-mi, (Apink)",
         "teams":"Jae-suk Team (Yoo Jae-suk, Yang Se-chan, Park Cho-rong, Yoon Bo-mi) Haha Team (Haha, Song Ji-hyo, Jung Eun-ji, Oh Ha-young) Jong-kook Team (Kim Jong-kook, Jee Seok-jin, Ji Ye-eun, Kim Nam-joo)",
         "mission":"Acquire the real gold briefcase and put it on the judgement stand to win the race.",
@@ -20,7 +20,7 @@
     {
         "ep_id":786,
         "aired_date":"January 18, 2026",
-        "title":"The Lucky 2026 OT Day (2026 운수 좋은 OT날)",
+        "title":"The Lucky 2026 OT Day",
         "guests":"Kwon Eun-bi",
         "teams":"Draw the Adjective: Jae-suk Team (Yoo Jae-suk, Jee Seok-jin, Haha, Ji Ye-eun) Jong-kook Team (Kim Jong-kook, Song Ji-hyo, Yang Se-chan, Kwon Eun-bi)Neck-and-Neck Dice of Luck: Red Team (Yoo Jae-suk, Kim Jong-kook, Ji Ye-eun, Kwon Eun-bi) Blue Team (Haha, Jee Seok-jin, Song Ji-hyo, Yang Se-chan)",
         "mission":"Correctly guess all 5 face balls from the lucky face lottery to win the race.",
@@ -29,7 +29,7 @@
     {
         "ep_id":787,
         "aired_date":"January 25, 2026",
-        "title":"Starting Today, I’m A Nine-Tailed Fox But… (오늘부터 구미호입니다만)",
+        "title":"Starting Today, I’m A Nine-Tailed Fox But…",
         "guests":"Kim Hye-yoon, Lomon",
         "teams":"No teams",
         "mission":"Have the same amount of 9 tails for the entire race to avoid penalty.",
@@ -38,271 +38,10 @@
     {
         "ep_id":788,
         "aired_date":"February 1, 2026",
-        "title":"TV Rating Notice Survival (연령고지 생존 서바이벌)",
+        "title":"TV Rating Notice Survival",
         "guests":"No guest",
         "teams":"No teams",
         "mission":"Being the last surviving member to have their concept chosen for the new TV Age Rating Notice.",
         "results":"The mission was won by Yoo Jae-suk as the last surviving member through the whipped cream cannon, after choosing Haha's drawing as the final two drawings, with Yoo Jae-suk later deciding to combine his drawing with Haha's drawing for TV Age Rating Notice filming."
-    },
-    {
-        "ep_id":789,
-        "aired_date":"February 8, 2026",
-        "title":"The Game of Two (2의 게임)",
-        "guests":"Hong Jin-ho, Mimi, (Oh My Girl)",
-        "teams":"First Team: Jin-ho Team (Hong Jin-ho, Yoo Jae-suk, Kim Jong-kook, Song Ji-hyo, Yang Se-chan) Mimi Team (Mimi, Haha, Jee Seok-jin, Ji Ye-eun)Final Team: Jae-suk Team (Yoo Jae-suk, Haha, Yang Se-chan, Hong Jin-ho, Mimi) Seok-jin Team (Jee Seok-jin, Kim Jong-kook, Song Ji-hyo, Ji Ye-eun)",
-        "mission":"Be chosen by the prize balls to win the race and prize and avoid being chosen by the penalty balls twice to escape penalty.",
-        "results":"The mission was won by Hong Jin-ho, who got chosen twice by the prize balls and received the Iberico Pork set as his prize. Kim Jong-kook, who got chosen twice by the penalty balls, had to receive two forehead slaps from Hong Jin-ho and PD Lee Myung-jae each as the penalty."
-    },
-    {
-        "ep_id":790,
-        "aired_date":"February 15, 2026",
-        "title":"I'm the Main Character Until Lunar New Year (설까지 주인공은 나야나)",
-        "guests":"Kyuhyun, (Super Junior), Roy Kim",
-        "teams":"No teams",
-        "mission":"Being in the top three as magpies to avoid penalty.",
-        "results":"The mission was won by Yoo Jae-suk, who successfully used his defense card on Kyuhyun, along with Kim Jong-kook and Yang Se-chan, who successfully avoided raw egg smash. They received a premium Daebong dried persimmon gift set as their prize. Haha, Jee Seok-jin, Song Ji-hyo, Ji Ye-eun, Kyuhyun, and Roy Kim had to receive a cold water splash from the winners as the penalty."
-    },
-    {
-        "ep_id":791,
-        "aired_date":"February 22, 2026",
-        "title":"The Great Jee-tsby (위대한 지츠비)",
-        "guests":"No guest",
-        "teams":"No teams",
-        "mission":"Celebrate Jee Seok-jin's 60th birthday while collecting big nose coins during the race.",
-        "results":"Mission Accomplished. Yoo Jae-suk was exempted from the penalty after he got the exemption card during the race. Jee Seok-jin, who chose himself from the penalty balls, along with Ji Ye-eun, who was chosen by him via the penalty balls, had to asked people at the Luminaris Street of Jamsil to make a congratulation video for Jee Seok-jin's 60th birthday and his 16 years on Running Man before going home as the penalty."
-    },
-    {
-        "ep_id":792,
-        "aired_date":"March 1, 2026",
-        "title":"Card Shark Association: Return of the 2026 Gamblers (타짜협회: 2026꾼들의귀환)",
-        "guests":"No guest",
-        "teams":"No teams",
-        "mission":"Have the most caramel candies to avoid penalty.",
-        "results":"The mission was won by Kim Jong-kook. He received the Korean beef set as his prize. Haha and Jee Seok-jin, who went broke after they used all of their caramel candies, had to get their sideburns pulled up by Yang Se-chan as the penalty."
-    },
-    {
-        "ep_id":793,
-        "aired_date":"March 8, 2026",
-        "title":"Run and Fun Company: Spin the Roomlette (런앤펀 컴퍼니: 룸렛을돌려라)",
-        "guests":"No guest",
-        "teams":"Run and Fun Event Company: Director (Jee Seok-jin) General Manager (Yoo Jae-suk) Deputy Manager (Kim Jong-kook) Managers (Haha, Song Ji-hyo) Employees (Yang Se-chan, Ji Ye-eun)",
-        "mission":"Being chosen by the achievement roulette to win the race while also not getting chosen by the overtime roulette to avoid penalty.",
-        "results":"There are no Winners. Although Jee Seok-jin got chosen by the achievement roulette and received a box of red ginseng as his prize to win the race, he also somehow got chosen by the overtime roulette as well. Haha, who was chosen by him via the overtime roulette had to work overtime alongside Jee Seok-jin by folding the nostalgic paper stars before going home as a penalty."
-    },
-    {
-        "ep_id":794,
-        "aired_date":"March 15, 2026",
-        "title":"Recharging Your Energy is All About Speed in Spring (활력충전도 스피드인가 봄)",
-        "guests":"Choi Min-jeong, Lee Jeong-min, Lee June-seo, Noh Do-hee, Shin Dong-min",
-        "teams":"First Teams: Green Team (Yoo Jae-suk, Jee Seok-jin, Choi Min-jeong, Noh Do-hee) Orange Team (Haha, Ji Ye-eun, Lee Jong-min, Shin Dong-min) Purple Team (Kim Jong-kook, Song Ji-hyo, Yang Se-chan, Lee June-seo)Final Teams: Orange Team (Yoo Jae-suk, Ji Ye-eun, Lee Jong-min, Shin Dong-min) Green Team (Haha, Choi Min-jeong, Lee June-seo, Noh Do-hee) Purple Team (Jee Seok-jin, Kim Jong-kook, Song Ji-hyo, Yang Se-chan)",
-        "mission":"Have a team with the lowest number of penalty balls to win the race.",
-        "results":"The mission was won by the Green Team, who received the foot spa vouchers as their prize. Jee Seok-jin and Ji Ye-eun, who had the most penalty balls, along with Yoo Jae-suk, who was chosen via the penalty balls by Ji Ye-eun, had to drink sophora root tea mixed with Ixeris Dentata as the penalty."
-    },
-    {
-        "ep_id":795,
-        "aired_date":"March 22, 2026",
-        "title":"Detective Agency: Find the Genuine Piece (탐정사무소: 진품을 찾아라)",
-        "guests":"Park Shin-yang, [I]Lee Chang-sub (BTOB), Sung Si-kyung, [J]",
-        "teams":"Emotional Animal Farm Jae-suk Team: (Yoo Jae-suk, Haha, Kim Jong-kook, Song Ji-hyo) Se-chan Team: (Yang Se-chan, Jee Seok-jin, Ji Ye-eun, Park Shin-yang)Head Water Transfer Jae-suk Team: (Yoo Jae-suk, Haha, Jee Seok-jin, Yang Se-chan) Jong-kook Team: (Kim Jong-kook, Song Ji-hyo, Ji Ye-eun)Dance to Put the Words in Order No teams",
-        "mission":"Solve the case by retrieving the missing Park Shin-yang's real painting to win the race.",
-        "results":"The mission was won by Yang Se-chan, who received a box of quail eggs set as his prize. Yoo Jae-suk, Haha, Jee Seok-jin, Kim Jong-kook, Song Ji-hyo and Ji Ye-eun had to break the wrap frame with their face as the penalty."
-    },
-    {
-        "ep_id":796,
-        "aired_date":"March 29, 2026",
-        "title":"You'd Probably Want a Bite (먹고 싶을 텐데)",
-        "guests":"Park Shin-yang, [I]Lee Chang-sub (BTOB), Sung Si-kyung, [J]",
-        "teams":"No teams",
-        "mission":"Have their name being chosen from food fighter board to win the race.",
-        "results":"The mission was won by Haha. He received a basket of premium fruit set as his prize. Kim Jong-kook and Ji Ye-eun, who were chosen by the penalty board, had to eat a lemon as the penalty."
-    },
-    {
-        "ep_id":797,
-        "aired_date":"April 5, 2026",
-        "title":"War of the Bosses: Ladder of Destiny (짱의 전쟁 : 운명의 사다리)",
-        "guests":"Jung Soo-jung (f(x)), Jung Woo, Shin Seung-ho",
-        "teams":"Knowledge Team: (Yoo Jae-suk, Ji Ye-eun, Shin Seung-ho) Physical Team: (Kim Jong-kook, Yang Se-chan, Jung Soo-jung) Top Visual Team: (Song Ji-hyo, Haha, Jee Seok-jin, Jung Woo)",
-        "mission":"Have their name being chosen as the big boss via the octopus leg game to win the race.",
-        "results":"The mission was won by Haha, Ji Ye-eun, Jung Woo and Shin Seung-ho. They receive a bag of snacks as their prize. Through game of luck, Jee Seok-jin, Kim Jong-kook and Song Ji-hyo receive cold water splash as the penalty."
-    },
-    {
-        "ep_id":798,
-        "aired_date":"April 12, 2026",
-        "title":"The Art of Betting: The Birth of a Gambler (베팅의 정석 -승부사의 탄생-)",
-        "guests":"Hwasa (Mamamoo), Young K (Day6)",
-        "teams":"Kim Jong-kook Game: Jae-suk Team (Yoo Jae-suk, Jee Seok-jin, Yang Se-chan, Ji Ye-eun, Hwasa) Jong-kook Team (Kim Jong-kook, Haha, Song Ji-hyo, Young K)Haha Game: Haha  Team (Haha, Jee Seok-jin, Ji Ye-eun) Hwasa Team (Hwasa, Kim Jong-kook, Yang Se-chan) Young K Team (Young K, Yoo Jae-suk, Song Ji-hyo)Yoo Jae-suk Game: Jae-suk  Team (Yoo Jae-suk, Kim Jong-kook, Yang Se-chan, Hwasa) Seok-jin Team (Jee Seok-jin, Haha, Song Ji-hyo, Ji Ye-eun, Young K)",
-        "mission":"Be on the top three with the most mission funds to win the race.",
-        "results":"The mission was won by Haha, Jee Seok-jin and Yang Se-chan, who receive their prizes respectively. Hwasa, Kim Jong-kook and Yoo Jae-suk, who were on the 7th, 8th and 9th place respectively, receive their penalty differently.Prizes: Haha - Korean melon set Jee Seok-jin - Korean pork set Yang Se-chan - A box of cup noodles setPenalty: Hwasa - Face-doodling Kim Jong-kook - Face-doodling and bald wig Yoo Jae-suk - Face-doodling, bald wig and gourd breaking"
-    },
-    {
-        "ep_id":799,
-        "aired_date":"April 19, 2026",
-        "title":"Running Days: Codename R (런닝데이즈 : 암호명 R)",
-        "guests":"Park Eun-tae [ko], Shin Sung-rok, Yoo Jun-sang",
-        "teams":"First Teams: Blue Team (Yoo Jae-suk, Jee Seok-jin, Ji Ye-eun, Park Eun-tae) Red Team (Haha, Kim Jong-kook, Shin Sung-rok) Yellow Team (Song Ji-hyo, Yang Se-chan, Yoo Jun-sang) Final Teams: Yellow Team (Yoo Jae-suk, Haha, Shin Sung-rok) Blue Team (Kim Jong-kook, Yang Se-chan, Ji Ye-eun, Park Eun-tae) Red Team (Jee Seok-jin, Song Ji-hyo, Yoo Jun-sang)Spies: (Yoo Jae-suk, Yoo Jun-sang)",
-        "mission":"Mission Teams' mission: Avoid having a spy on their team to win the race.Spies' mission: Being on two different teams to win the race.",
-        "results":"The mission was won by the spies. The spies receive ₩1,034,000 in total and will split the money prize to ₩517,000 each, which Yoo Jun-sang would give his money prize to his wife Hong Eun-hee instead for helping him win the race. Haha and Shin Sung-rok, who had Yoo Jae-suk on their team, along with Jee Seok-jin and Song Ji-hyo, who had Yoo Jun-sang on their team, had to receive flogging penalty."
-    },
-    {
-        "ep_id":800,
-        "aired_date":"April 26, 2026",
-        "title":"Infinite Accumulation with Destiny Race (팔자 따라 무한적립 레이스)",
-        "guests":"No guest",
-        "teams":"No teams",
-        "mission":"Choose the button between Up or Down.",
-        "results":"There are no winners. They had obtain the total of ₩10,300,000 during the entire race and will donate the money to the ChildFund Korea under Running Man name. Song Ji-hyo and Yang Se-chan, who were chosen via the penalty balls, had to write 7 letters that will be included to the 800th Episode's merchandise set before going home as the penalty."
-    },
-    {
-        "ep_id":801,
-        "aired_date":"May 3, 2026",
-        "title":"Be Different to Walk the Flower Path (색달라야 꽃길)",
-        "guests":"Chung Ha, Jeon Somi, (I.O.I), [O], [P]",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Yang Se-chan, Ji Ye-eun, Chung Ha)Seok-jin Team (Jee Seok-jin, Haha, Kim Jong-kook, Song Ji-hyo, Jeon Somi)",
-        "mission":"Being on the top 3 with the most money to win the race.",
-        "results":"The mission was won by Song Ji-hyo, Chung Ha and Jeon Somi, who receive a box of fruit rice cake set as their prize. Ji Ye-eun, who had the least mission money, along with both Haha and Yang Se-chan, who were chosen by the board, receive the rainbow sponge penalty."
-    },
-    {
-        "ep_id":802,
-        "aired_date":"May 10, 2026",
-        "title":"Gold Thief: Break the Vault (골드 스틸리: 금고를 털어라)",
-        "guests":"Chae Won-bin, Kim Min-seok, Yoo Hee-kwan",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Yang Se-chan, Chae Won-bin)Haha Team (Haha, Ji Ye-eun, Kim Min-seok, Yoo Hee-kwan)Jong-kook Team (Kim Jong-kook, Jee Seok-jin, Song Ji-hyo)",
-        "mission":"Have a team successfully open the safe to win the race.",
-        "results":"The mission was won by Jae-suk Team, who successfully retrieve the gold from the red safe, which Yoo Jae-suk would give all the gold instead to Chae Won-bin. Haha Team, who got a dud from the yellow safe, along with Jong-kook Team, who failed to open the safe, had to chew 10 sweet wormwood pills each per members as the penalty."
-    },
-    {
-        "ep_id":803,
-        "aired_date":"May 17, 2026",
-        "title":"Secret Payment (은밀한 결제)",
-        "guests":"Gong Myung",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Song Ji-hyo, Yang Se-chan, Gong Myung)Seok-jin Team (Jee Seok-jin, Haha, Kim Jong-kook, Ji Ye-eun)",
-        "mission":"Have the least money on the credit card to win the race.",
-        "results":"The mission was won by Jae-suk Team, with the remaining balance of ₩ 104,000, while Seok-jin Team still had ₩161,000 on the card. Jee Seok-jin was exempted from the penalty. Haha, Kim Jong-kook, Ji Ye-eun, who were on the losing team, along with Yoo Jae-suk, who was chosen via the penalty balls by Gong Myung, receive the water splash penalty."
-    },
-    {
-        "ep_id":804,
-        "aired_date":"May 24, 2026",
-        "title":"Why is Running Man Like That? (런닝맨은 왜 그럴까?)",
-        "guests":"Ahn Jae-hyun, Kang So-ra",
-        "teams":"No teams",
-        "mission":"Buy the penalty transfer card to avoid penalty.",
-        "results":"Result: There are no winners. Although both Yoo Jae-suk and Haha bought the penalty transfer card each, all members including the guests had agreed to receive the fresh cream bomb without towels penalty together, to avoid wasting the penalty transfer cards that they bought. [R]Item Purchased:  Yoo Jae-suk - Penalty Transfer Card & Handheld fan   Haha - Penalty Transfer Card  Jee Seok-jin - Gift Certificate & Handheld fan  Song Ji-hyo - Gift Certificate & Handheld fan  Ji Ye-eun - Gift Certificate Kang So-ra - Gift Certificate"
-    },
-    {
-        "ep_id":805,
-        "aired_date":"May 31, 2026",
-        "title":"I Will Prove It With My Face (얼굴로 증명하겠습니다)",
-        "guests":"Lee Joo-bin",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Jee Seok-jin, Yang Se-chan, Lee Joo-bin)Jong-kook Team (Kim Jong-kook, Haha, Song Ji-hyo, Ji Ye-eun)",
-        "mission":"Have a ID photo with the correct five iconic disguises to win the race.",
-        "results":"The mission was won by Haha, Kim Jong-kook, Song Ji-hyo, Yang Se-chan and Ji Ye-eun. Through the overtime penalty balls that was chosen by Yang Se-chan, Lee Joo-bin had to wear five variety show makeup items and draw a circle beard on the face of three citizens while took a picture with them as overtime penalty before going home."
-    },
-    {
-        "ep_id":806,
-        "aired_date":"June 7, 2026",
-        "title":"Solo Money Up (나 혼자 머니업)",
-        "guests":"Jeon So-min, Kim Kyung-nam",
-        "teams":"No teams",
-        "mission":"Have the most money through the entire race while being on the top three to avoid penalty.",
-        "results":"The mission was won by Haha, with the remaining balance of ₩ 1,238,000, followed by Song Ji-hyo, who still had ₩ 1,033,000, and Yoo Jae-suk with ₩ 1,026,000. Kim Jong-kook, Yang Se-chan and Jeon So-min were exempted from the penalty. Through game of luck, Jee Seok-jin and Ji Ye-eun receive the flogging penalty."
-    },
-    {
-        "ep_id":807,
-        "aired_date":"June 14, 2026",
-        "title":"A Quick Visit to Your Place (너희 집에 살짝 들렀어)",
-        "guests":"Kim Dong-hyun, Mimi (Oh My Girl)",
-        "teams":"Physical Quiz Battle: Jae-suk Team (Yoo Jae-suk, Haha, Ji Ye-eun, Kim Dong-hyun)Jong-kook Team (Kim Jong-kook, Jee Seok-jin, Song Ji-hyo, Yang Se-chan, Mimi)",
-        "mission":"Avoid being chosen by the babysitting penalty balls.",
-        "results":"There are no winners. Through the babysitting penalty balls that were chosen by Kim Dong-hyun's son Kim Dan-woo, Kim Jong-kook and Mimi had to babysit Kim Dong-hyun's children before going home as penalty."
-    },
-    {
-        "ep_id":808,
-        "aired_date":"June 21, 2026",
-        "title":"Running Man Summer Vacation (런닝맨여름축캉스)",
-        "guests":"No guests",
-        "teams":"No teams",
-        "mission":"Follow the soccer pre-season training and team-building retreat.",
-        "results":"There are no winners. Through the game of luck, Haha and Yang Se-chan receive the cold water river penalty."
-    },
-    {
-        "ep_id":809,
-        "aired_date":"June 28, 2026",
-        "title":"The Invaluable New World (값진 신세계)",
-        "guests":"Hwang Kwang-hee (ZE:A), Lee Se-hee",
-        "teams":"First Rank: Nobles (Haha, Kim Jong-kook, Ji Ye-eun, Hwang Kwang-hee) Slaves (Yoo Jae-suk, Jee Seok-jin, Song Ji-hyo, Yang Se-chan, Lee Se-hee)Final Rank: Nobles (Yoo Jae-suk, Kim Jong-kook, Song Ji-hyo, Lee Se-hee) Slaves (Haha, Jee Seok-jin, Yang Se-chan, Ji Ye-eun, Hwang Kwang-hee)",
-        "mission":"Avoid the slaves rank status to win the race.",
-        "results":"The mission was won by Yoo Jae-suk, Kim Jong-kook, Song Ji-hyo and Lee Se-hee. Haha uses his Penalty Transfer Card to avoid the penalty. Jee Seok-jin, Yang Se-chan, Ji Ye-eun and Hwang Kwang-hee, along with Lee Se-hee, who loses at the Rock-Paper-Scissors game despite being the winner of the race, had to write an apology letter on a 3m long scroll before going home as penalty."
-    },
-    {
-        "ep_id":810,
-        "aired_date":"July 5, 2026",
-        "title":"A Great Luck Comes to Me (살다 보면 목동 쥐겠지)",
-        "guests":"Minnie, Miyeon, (i-dle)",
-        "teams":"Human Team (Yoo Jae-suk, Kim Jong-kook, Song Ji-hyo, Yang Se-chan, Minnie, Miyeon)Water Ghosts (Jee Seok-jin, Ji Ye-eun)Water Ghost Assistant (Haha) [U]",
-        "mission":"Eliminate the water ghosts to win the race.",
-        "results":"The mission was won by the Human Team, who successfully eliminated Water Ghosts Jee Seok-jin, Ji Ye-eun, and their assistant Haha. Yang Se-chan and Miyeon, the two last humans standing, received the total money prize of ₩790,000 from their farm work."
-    },
-    {
-        "ep_id":811,
-        "aired_date":"July 12, 2026",
-        "title":"Holding the Nostalgic Memory's Edge  (이 기억의 끝을 잡고)",
-        "guests":"Jo Hye-ryun, Song Eun-i",
-        "teams":"Comedy Team (Yoo Jae-suk, Jee Seok-jin, Yang Se-chan, Jo Hye-ryun, Song Eun-i)Variety Team (Kim Jong-kook, Haha, Song Ji-hyo, Ji Ye-eun)",
-        "mission":"Have the most correct authentic items to win the race.",
-        "results":"The mission was won by Comedy Team. They receive a box of healthy supplements as their prize. Through game of luck, Kim Jong-kook, Song Ji-hyo and Ji Ye-eun, had to do Jo Hye-ryun's Tae Bo diet exercise before going home as a penalty."
-    },
-    {
-        "ep_id":812,
-        "aired_date":"July 19, 2026",
-        "title":"Yaho Off to Work (출근 야호)",
-        "guests":"No guests",
-        "teams":"No teams",
-        "mission":"Avoid having the filming very earlier or very late to win the race.",
-        "results":"There are no winners. As the final result of the filming time that was decided, they will start filming the next week episode at 8:30 AM in the morning."
-    },
-    {
-        "ep_id":813,
-        "aired_date":"July 26, 2026",
-        "title":"Goal: The Favorite Employee (목표는, 최애 사원)",
-        "guests":"Cha Woo-min, Kang Hoon, Kim Hye-jun",
-        "teams":"Running Man Employees (Yoo Jae-suk, Haha, Jee Seok-jin, Kim Jong-kook, Song Ji-hyo, Ji Ye-eun, Cha Woo-min, Kim Hye-jun)Thieves (Yang Se-chan, Kang Hoon)",
-        "mission":"Running Man Employees: Have the most gold bars while also successfully capture the gold bar thieves to win the race.Thieves: (Make at least 3 people angry, sabotage the lunch team's mission that was chosen, and get someone to say \"you're funny\".)",
-        "results":"The mission was won by Thieves, after Yang Se-chan fooled everyone through the entire race. Yang Se-chan and Kang Hoon received a Korean pork set each as their prize. Yoo Jae-suk, who successfully guess the thieves, was exempted from the penalty. Haha, Jee Seok-jin, Kim Jong-kook, Song Ji-hyo, Ji Ye-eun, Cha Woo-min, Kim Hye-jun, who failed to guess and capture the thieves, received the water splash penalty."
-    },
-    {
-        "ep_id":814,
-        "aired_date":"August 2, 2026",
-        "title":"Undercover Chaebol vs. Detectives (언더커버 재벌vs형사)",
-        "guests":"Ahn Bo-hyun, Jung Eun-chae, Kang Sang-jun, Kim Shin-bi [ko]",
-        "teams":"Chaebol Team Chairman (Haha) Secretary (Jung Eun-chae) Members (Yoo Jae-suk, Song Ji-hyo, Ahn Bo-hyun, Kang Sang-jun)Detective Team Detective (Jee Seok-jin) Members (Kim Jong-kook, Yang Se-chan, Ji Ye-eun, Kim Shin-bi)",
-        "mission":"Chaebol Team: The chairman needs to escape with the money briefcase.Detective Team: Identify and arrest the chairman.",
-        "results":"The mission was won by Chaebol Team, who received a seasonal fruit set and the items purchased during the intermediate missions. Detective Team received the whipped cream bomb penalty."
-    },
-    {
-        "ep_id":815,
-        "aired_date":"August 9, 2026",
-        "title":"Let's All Walk Around Jongno (다 같이 돌자 종로 한 바퀴)",
-        "guests":"Hong Jin-ho, Kim Ji-yu",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Yang Se-chan, Ji Ye-eun, Hong Jin-ho)Jong-kook Team (Kim Jong-kook, Haha, Jee Seok-jin, Song Ji-hyo, Kim Ji-yu)",
-        "mission":"Complete the Jongno Marble race to win.",
-        "results":"The mission was won by Jong-kook Team. Although Jong-kook Team won the race, they did not received prizes because the team never landed on the prize spaces on the marble. Yoo Jae-suk, Yang Se-chan and Hong Jin-ho were chosen by the penalty balls to do the penalties they had landed on the penalty spaces on the marble.Penalty: Yoo Jae-suk - water slap, drink sophora root tea and water bucket Yang Se-chan - water slap and water bucket  Hong Jin-ho - drink sophora root tea"
-    },
-    {
-        "ep_id":816,
-        "aired_date":"August 16, 2026",
-        "title":"Scratch-vacation in the Sweltering Heat (무더위 속 깜짝 휴가)",
-        "guests":"Jung Eun-ji, Kim Ji-eun, Lee Joo-yeon",
-        "teams":"Jae-suk Team (Yoo Jae-suk, Haha, Jee Seok-jin, Kim Ji-eun, Lee Joo-yeon)Jong-kook Team (Kim Jong-kook, Song Ji-hyo, Yang Se-chan, Ji Ye-eun, Jung Eun-ji)",
-        "mission":"Avoid being chosen by the penalty balls.",
-        "results":"The mission was won by Yoo Jae-suk, Haha, Jee Seok-jin, Kim Jong-kook, Song Ji-hyo, Kim Ji-eun and Lee Joo-yeon. Yang Se-chan, Ji Ye-eun and Jung Eun-ji had to write a 1,000-word essay with their feet on the ice bucket as a penalty."
-    },
-    {
-        "ep_id":817,
-        "aired_date":"August 23, 2026",
-        "title":"Stay Strong Chief Kang! (강부장)",
-        "guests":"No guests",
-        "teams":"No teams",
-        "mission":"Beat Lee Se-hyun in the game of darts to win the prizes for cameraman Kang Chan-hee.",
-        "results":"Mission Failed. Kang Chan-hee received a box of wild ginseng, which Haha bought during the bonus round in which he failed, and the director's chair as prizes."
     }
 ]
