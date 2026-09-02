@@ -275,14 +275,14 @@ p {
 
 .glass-card h2 {
   width: min(100%, 34rem);
-  margin: 0 0 0.4rem;
+  margin-bottom: 0.4rem;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   text-align: left;
 }
 
 .ep-id {
   width: min(100%, 34rem);
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
   color: var(--rm-blue);
   /*font-size: 0.95rem;*/
   font-weight: 700;
@@ -311,7 +311,8 @@ p {
   margin-top: 1.25rem;
   min-height: 2.85rem;
   padding: 0 1.15rem;
-  border: 1px solid rgba(32, 80, 144, 0.16);
+  border:none;
+  /*border: 1px solid rgba(32, 80, 144, 0.16);*/
   border-radius: 999px;
   background: var(--rm-yellow);
   color: #16385f;
