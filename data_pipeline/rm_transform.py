@@ -29,7 +29,12 @@ def run_transform():
     df["aired_date"] = df["aired_date"].str.split("|").str[0]
     # df["aired_date"] = pd.to_datetime(df["aired_date"])
 
+    df["title"] = df["title"].str.split("|").str[0].str.strip()
+
     df["guests"] = df["guests"].str.replace("|", ", ")
+
+    mask = df["guests"].str.lower().str.contains("no guest", na=False)
+    df.loc[mask, "guests"] = "No guest"
 
     cols_to_clean = ["title","teams","mission","results"]
     for col in cols_to_clean:
