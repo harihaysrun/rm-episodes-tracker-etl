@@ -40,7 +40,7 @@ Flask Web Application
 
 `rm_load.py` loads the transformed data into PostgreSQL using Pandas and SQLAlchemy, with parameterised queries and context-managed database connections.
 
-### Orchestration & Automation
+### 4. Orchestration & Automation
 
 The ETL pipeline is currently automated using **GitHub Actions**, with a scheduled workflow that runs the pipeline weekly.
 
