@@ -1,65 +1,83 @@
+![Header](https://nsy-rm-etl-49d98b403757.herokuapp.com/static/header-bg.png)
+
 # Running Man Episode Tracker
 
-A fully automated ETL pipeline that scrapes, processes, and loads *Running Man* episode data into a database for use in a front-end interface with search, filtering, and watchlist functionality.
+An automated ETL pipeline that scrapes *Running Man* episode data, transforms and stores it in PostgreSQL, and makes the data available through an interactive Flask web application.
 
 ### Tech Stack
-- **Data & ETL:** Python, Pandas, PostgreSQL, SQLAlchemy
-- **Orchestration & automation:** GitHub Actions, Apache Airflow
-- **Cloud storage:** AWS S3
-- **Containerisation & infrastructure:** Docker
-- **Web application:** Flask, Jinja2
 
-## How the pipeline works
+- **ETL:** Python, Pandas, SQLAlchemy, PostgreSQL
+- **Orchestration:** Apache Airflow
+- **Cloud:** AWS S3
+- **Infrastructure:** Docker
+- **Web:** Flask, Jinja2
 
-### 1. Extraction (E): Web scraping
-`rm_scraper.py` initiates by accessing the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using `BeautifulSoup4`. Due to the complex structure of the HTML table (with multiple rowspans), data is stored in a grid list to preserve the exact positioning of the cell values before being saved in a JSON file stored in S3.
-* Removal of HTML tags is performed during this step.
+## Pipeline
 
-### 2. Transformation (T): Data refinement
-The JSON file is processed by `rm_transform.py`, which uses `pandas` for data transformation and preparation. This stage includes:
-* **Normalisation:** Standardising column headers and data formats.
-* **Data cleaning:** Fixing data types and converting structured fields (e.g., guest lists) into a consistent format.
-* **Validation:** Ensuring the output is clean and ready for the loading phase.
+```text
+Wikipedia
+    ↓
+Python / BeautifulSoup
+    ↓
+AWS S3 (Raw JSON)
+    ↓
+Pandas (Transformation)
+    ↓
+PostgreSQL
+    ↓
+Flask Web Application
+```
 
-### 3. Loading (L): Database persistence
-`rm_load.py` loads the cleaned JSON data into the PostgreSQL database using `pandas` and `SQLAlchemy`:
+### 1. Extraction
 
-* **Data ingestion:** Transfers transformed DataFrames into PostgreSQL efficiently.
-* **Production practices:** Uses context managers for safe connection handling and parameterised operations for secure data loading.
+`rm_scraper.py` scrapes the [Running Man episode list on Wikipedia](https://en.wikipedia.org/wiki/List_of_Running_Man_episodes_(2026)) using BeautifulSoup4. The extracted data is stored as JSON in S3, with HTML tags removed during extraction.
+
+### 2. Transformation
+
+`rm_transform.py` uses Pandas to clean and standardise the extracted data, including column names, data formats, data types, and guest information.
+
+### 3. Loading
+
+`rm_load.py` loads the transformed data into PostgreSQL using Pandas and SQLAlchemy, with parameterised queries and context-managed database connections.
+
+### Orchestration & Automation
+
+The ETL pipeline is currently automated using **GitHub Actions**, with a scheduled workflow that runs the pipeline weekly.
+
+**Apache Airflow** is included for local orchestration and testing, with the pipeline containerised using Docker.
+## Web Application
+
+A Flask-based dashboard provides:
+
+- Episode search and filtering
+- Add and remove episodes from a watchlist
+
+**[Live Demo](https://nsy-rm-etl-49d98b403757.herokuapp.com/)**
 
 <details>
-<summary><b>Click here to view the database schema (ERD)</b></summary>
-
-![Database Schema](database/erd-model.png)
-</details>
-
-
-
-## Automation with GitHub Actions
-The pipeline is orchestrated using **GitHub Actions** for automated scheduled execution, providing a lightweight alternative to Apache Airflow.
-* A cron-based workflow triggers the Python scripts in sequence on a weekly schedule. This creates a "set-and-forget" data environment where the database is continuously kept in sync with the latest episodes.
-
-
-## Full-stack dashboard & watchlist
-
-<details>
-<summary><b>Click here to view the UI</b></summary>
+<summary><b>View the UI</b></summary>
 
 ![Home page](web_app/ui/1.png)
 ![Watchlist](web_app/ui/2.png)
+
 </details>
 
-Beyond the engineering pipeline, this project includes an interactive web dashboard built on `Flask` and `Jinja2`. This serves as the visualisation layer, allowing users to:
-* **Explore episodes:** Search and filter through the complete episode database.
-* **Personal watchlist:** Maintain a custom state for episodes, demonstrating basic CRUD (Create, Read, Update, Delete) capabilities within the web app.
+## Database
 
+<details>
+<summary><b>View the ERD</b></summary>
+
+![Database Schema](database/erd-model.png)
+
+</details>
 
 ## Project Structure
 
 ```text
 rm-episodes-tracker-etl/
-├── .github/workflows/    # CI/CD pipelines
-├── airflow/              # DAG
-├── data_pipeline/        # Core ETL logic (scraper, transform, load) & requirements.txt for cron job
-├── database/             # SQL schema
-└── web_app/              # Flask dashboard (templates, static assets, app.py)
+├── .github/workflows/    # CI/CD
+├── airflow/              # Airflow DAG
+├── data/                 # Sample raw and cleaned data
+├── data_pipeline/        # ETL scripts
+├── database/             # SQL schema & ERD
+└── web_app/              # Flask application
