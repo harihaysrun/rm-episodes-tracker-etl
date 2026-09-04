@@ -7,21 +7,19 @@
 
   <section class="card-grid" aria-label="Watchlist episodes">
     {% for episode in watchlist %}
-      <article class="glass-card">
+      <article class="glass-card watchlist">
         <div>
           <p class="ep-id">Ep. {{ episode.ep_id }}</p>
           <h2>{{ episode_lookup[episode.ep_id].title }}</h2>
           <p class="guest-list">{{ guests_list[episode.ep_id]|join(", ") if guests_list[episode.ep_id] else "No guests" }}</p>
           <p>{{ episode_lookup[episode.ep_id].mission }}</p>
         </div>
-        <button class="card-button remove-button" type="button" data-ep-id="{{ episode.ep_id }}">Remove</button>
-        <button class="card-button watch-button{% if episode.watched == 'yes' %} watched{% endif %}" type="button" data-ep-id="{{ episode.ep_id }}">
-          {% if episode.watched == "yes" %}
-            Watched
-          {% else %}
-            Mark as watched
-          {% endif %}
-        </button>
+        <div>
+            <button class="card-button remove-button" type="button" data-ep-id="{{ episode.ep_id }}"><span class="material-symbols-outlined">delete</span></button>
+            <button class="card-button watch-button{% if episode.watched == 'yes' %} watched{% endif %}" type="button" data-ep-id="{{ episode.ep_id }}">
+              <span class="material-symbols-outlined">check</span>
+            </button>
+        </div>
       </article>
     {% else %}
       <p class="empty-state">No episodes found.</p>

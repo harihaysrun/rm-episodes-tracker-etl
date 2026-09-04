@@ -1,4 +1,4 @@
-![Header](https://nsy-rm-etl-49d98b403757.herokuapp.com/static/header-bg.png)
+![Header](web_app/static/header-bg.png)
 
 # Running Man Episode Tracker
 
